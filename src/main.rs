@@ -40,8 +40,10 @@ fn make_string(strs: Vec<String>) -> String {
         res.push_str(&s);
         res.push(' ');
     }
-    let len = res.len() - 1;
-    res.truncate(len);
+    if res.len() > 0 {
+        let len = res.len() - 1;
+        res.truncate(len);
+    }
     res
 }
 
