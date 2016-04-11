@@ -2,6 +2,12 @@
 
 A powerful program for saying rest in peace.
 
+## Installation ##
+
+With Rust installed, simply run `make install`.
+
+## RIP ##
+
 ```
 aatxe@server:~$ rip
                   _  /)
