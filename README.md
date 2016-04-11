@@ -1,4 +1,4 @@
-# RIP #
+# RIP [![Build Status](https://travis-ci.org/aatxe/rip.svg?branch=master)](https://travis-ci.org/aatxe/rip) #
 
 A powerful program for saying rest in peace.
 
