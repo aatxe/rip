@@ -1,6 +1,11 @@
 [package]
 name = "rip"
 version = "1.0.0"
+description = "Rest in peace."
 authors = ["Aaron Weiss <aaronweiss74@gmail.com>"]
+license = "CC0-1.0"
+keywords = ["rip", "tombstone"]
+repository = "https://github.com/aatxe/rip"
+readme = "README.md"
 
 [dependencies]
