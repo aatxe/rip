@@ -84,7 +84,7 @@ aatxe@server:~$ rip everyone ever
    \))ejm97/.,(//,,..,,\||(,,.,\\,.((//
 ```
 
-Even the tombstone writers get bored though. If the annotation is too wrong, they might not bother.
+Even the tombstone writers get bored though. If the annotation is too long, they might not bother.
 
 ```
 aatxe@server:~$ rip this one is too long
