@@ -18,13 +18,13 @@ fn main() {
     println!(r"          | |   \. _|_. | .  ||");
     println!(r"          |                  ||");
     println!(r"          |  {            }  ||", tombstone_label());
-    println!(r"          |                  ||");
+    println!(r"          |  {            }  ||", tombstone_year());
     println!(r"  *       | *   **    * **   |**      **");
     println!(r"   \))ejm97/.,(//,,..,,\||(,,.,\\,.((//");
 }
 
 fn tombstone_label() -> String {
-    let args = make_string(args().skip(1).collect());
+    let args = make_string(args().skip(3).collect());
     if args.len() <= 14 && args.len() > 0 {
         center_pad(&args, 14)
     } else if args.len() == 0 {
@@ -33,6 +33,20 @@ fn tombstone_label() -> String {
         center_pad("tl;dw", 14)
     }
 }
+
+fn tombstone_year() -> String {
+    let mut args = args().skip(1);
+    let (open_year, end_year) = (args.next().unwrap(), args.next().unwrap());
+    let str = format!("{} - {}", open_year, end_year);    
+    if str.len() <= 14 && str.len() > 0 {
+        center_pad(&str, 14)
+    } else if args.len() == 0 {
+        center_pad("", 14)
+    } else {
+        center_pad("tl;dw", 14)
+    }
+}
+
 
 fn make_string(strs: Vec<String>) -> String {
     let mut res = String::new();
